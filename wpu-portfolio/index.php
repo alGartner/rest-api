@@ -68,6 +68,14 @@
       </div>
     </section>
 
+    <!-- Youtobe and IG -->
+    <section class="sosial" id="sosoal">
+      
+    </section>
+
+    
+    
+
 
     <!-- Portfolio -->
     <section class="portfolio bg-light" id="portfolio">
@@ -218,3 +226,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
+/**
+* ! Baru di menit 7:15
+* TODO link https://www.youtube.com/watch?v=-BmTKA1xCm8&list=PLFIM0718LjIW7AsIbnhFg15t9yx4H-sQ0&index=6
+*/

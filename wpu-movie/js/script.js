@@ -8,7 +8,7 @@ function searchMovie(){
             's' :$('#search-input').val()
         },
         dataType: "json",
-        success: function (datgit a) {
+        success: function (data) {
             console.log(data);
            if (data.Response == "True"){
                 let movies = data.Search;

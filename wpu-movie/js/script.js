@@ -9,6 +9,7 @@ function searchMovie(){
         },
         dataType: "json",
         success: function (data) {
+            console.log(data);
            if (data.Response == "True"){
                 let movies = data.Search;
 

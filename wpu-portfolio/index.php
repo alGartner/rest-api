@@ -276,6 +276,6 @@
 
 
 /**
-* ! Baru di menit 7:15
+* ! Baru di menit 16:59
 * TODO link https://www.youtube.com/watch?v=-BmTKA1xCm8&list=PLFIM0718LjIW7AsIbnhFg15t9yx4H-sQ0&index=6
 */

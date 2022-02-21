@@ -1,3 +1,25 @@
+<?php
+
+function get_CURL($curl){
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL, $curl);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+    $result = curl_exec($curl);
+    curl_close($curl);
+    
+   return json_decode($result, true);
+
+  }
+  
+  $result = get_CURL('https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=UCkXmLjEr95LVtGuIm3l2dPg&key=AIzaSyA3S7v2a_QH3sLBjmen5fu3vqfit_wJW6o');
+
+  $youtubeProfileImage = $result['items'][0]['snippet']['thumbnails']['medium']['url'];
+  $channelName = $result['items']['0']['snippet']['title'];
+  $subcraber = $result['items']['0']['statistics']['subscriberCount'];
+
+  $LastVidio = get_CURL('test');
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -81,11 +103,11 @@
           <div class="col-md-5">
             <div class="row">
               <div class="col-md-4">
-                <img src="img/profile1.png" alt="" width="200" class="rounded-circle img-thumbnail">
+                <img src="<?= $youtubeProfileImage; ?>" alt="" width="200" class="rounded-circle img-thumbnail">
               </div>
               <div class="col-md-8">
-                <h5>WebProgrammingUNPAS</h5>
-                <p>70000 Subscriber</p>
+                <h5><?= $channelName; ?></h5>
+                <p><?= $subcraber; ?> Subscriber</p>
               </div>
             </div>
             
@@ -260,12 +282,6 @@
       </div>
     </footer>
 
-
-
-
-
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -276,6 +292,6 @@
 
 
 /**
-* ! Baru di menit 16:59
+* ! Baru di menit 38:13
 * TODO link https://www.youtube.com/watch?v=-BmTKA1xCm8&list=PLFIM0718LjIW7AsIbnhFg15t9yx4H-sQ0&index=6
 */
